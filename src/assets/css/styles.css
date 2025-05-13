@@ -500,3 +500,9 @@ footer {
 .about-content p:last-child {
     margin-bottom: 0;
 }
+
+#about .about-content {
+    text-align: center; /* Center the text horizontally */
+    margin: 0 auto; /* Center the content block */
+    max-width: 800px; /* Optional: Limit the width for better readability */
+}
