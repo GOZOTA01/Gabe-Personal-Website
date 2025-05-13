@@ -506,3 +506,12 @@ footer {
     margin: 0 auto; /* Center the content block */
     max-width: 800px; /* Optional: Limit the width for better readability */
 }
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center;
+    padding: 5rem 2rem; /* Ensure consistent padding with other sections */
+}
