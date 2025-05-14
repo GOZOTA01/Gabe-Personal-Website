@@ -470,7 +470,7 @@ footer {
 @media (max-width: 768px) {
     .tech-grid {
         grid-template-columns: 1fr;
-    }
+}
 
     .tech-items {
         grid-template-columns: repeat(2, 1fr);
@@ -492,26 +492,101 @@ footer {
     background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
 }
 
+#about {
+    background: var(--white); /* Same white background as My Tech Stack */
+    padding: 5rem 2rem; /* Ensure consistent padding */
+    border-radius: 1rem; /* Match the border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Match the shadow */
+    margin: 0 auto 5rem auto; /* Add space below the section */
+    max-width: 1200px; /* Limit the width for consistency */
+}
+
+#about .card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+}
+
+#about h2 {
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#about h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+.about-content {
+    max-width: 100%;
+    padding: 1rem;
+}
+
 .about-content p {
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    font-size: 1.1rem;
 }
 
 .about-content p:last-child {
     margin-bottom: 0;
 }
 
-#about .about-content {
-    text-align: center; /* Center the text horizontally */
-    margin: 0 auto; /* Center the content block */
-    max-width: 800px; /* Optional: Limit the width for better readability */
+.project-content {
+    margin-top: 1rem;
 }
 
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the content horizontally */
-    justify-content: center; /* Center the content vertically */
-    text-align: center;
-    padding: 5rem 2rem; /* Ensure consistent padding with other sections */
+.project-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    transition: var(--transition);
+}
+
+.project-link:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+.project-link i {
+    margin-left: 0.5rem;
+    font-size: 0.9em;
+}
+
+.project-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.project-card ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.project-card ul li::before {
+    content: '•';
+    color: var(--primary-color);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
 }
